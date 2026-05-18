@@ -1,9 +1,12 @@
-import { Search, Bell } from 'lucide-react';
+import { Search, Bell, Menu } from 'lucide-react';
 
-export default function Navbar({ user }) {
+export default function Navbar({ user, onMenuClick }) {
   return (
-    <header className="h-16 border-b border-white/10 flex items-center justify-between px-8 bg-[#0f172a]/60 backdrop-blur-md sticky top-0 z-10">
-      <div className="flex items-center gap-4 md:hidden font-bold text-white">
+    <header className="h-16 border-b border-white/10 flex items-center justify-between px-4 sm:px-8 bg-[#0f172a]/60 backdrop-blur-md sticky top-0 z-10">
+      <div className="flex items-center gap-3 md:hidden font-bold text-white">
+        <button onClick={onMenuClick} className="p-2 -ml-2 text-white/60 hover:text-white hover:bg-white/5 rounded-lg transition-colors">
+          <Menu size={20} />
+        </button>
         Staff<span className="text-indigo-400">Sync</span>
       </div>
 
