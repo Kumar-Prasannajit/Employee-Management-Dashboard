@@ -16,19 +16,19 @@ export default function EmployeeFilters({ searchTerm, setSearchTerm, status, set
         <select 
           value={status} 
           onChange={(e) => setStatus(e.target.value)} 
-          className="bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm outline-none cursor-pointer"
+          className="bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm outline-none cursor-pointer text-white"
         >
-          <option value="All">Status</option>
-          <option value="Active">Active</option>
-          <option value="Inactive">Inactive</option>
+          <option value="All" className="bg-gray-800">Status</option>
+          <option value="Active" className="bg-gray-800">Active</option>
+          <option value="Inactive" className="bg-gray-800">Inactive</option>
         </select>
         <select 
           value={dept} 
           onChange={(e) => setDept(e.target.value)} 
-          className="bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm outline-none cursor-pointer"
+          className="bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm outline-none cursor-pointer text-white"
         >
-          <option value="All">Department</option>
-          {depts.map(d => <option key={d} value={d}>{d}</option>)}
+          <option value="All" className="bg-gray-800">Department</option>
+          {depts.map(d => <option key={d} value={d} className="bg-gray-800">{d}</option>)}
         </select>
       </div>
     </div>
