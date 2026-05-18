@@ -4,7 +4,7 @@ A modern employee management dashboard built with React, Redux Toolkit, and Tail
 
 ## Getting Started
 
-To run this project locally, you need to start both the development server and the mock backend.
+To run this project locally, you just need to install the dependencies and start the development server. The application uses MockAPI for backend services.
 
 ### 1. Installation
 
@@ -14,15 +14,7 @@ Install the project dependencies:
 npm install
 ```
 
-### 2. Start the Backend (JSON Server)
-
-The application uses `json-server` to mock the API. Start it in a separate terminal:
-
-```bash
-json-server --watch db.json --port 5000
-```
-
-### 3. Start the Frontend
+### 2. Start the Application
 
 Start the Vite development server:
 
@@ -44,4 +36,4 @@ The application will be available at `http://localhost:5173`.
 - **State Management**: Redux Toolkit
 - **Routing**: React Router v7
 - **Icons**: Lucide React
-- **Mock API**: JSON Server
+- **Mock API**: MockAPI
