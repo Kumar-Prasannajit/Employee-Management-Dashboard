@@ -45,6 +45,15 @@ const Login = () => {
             <p className="text-slate-400 mt-2">Enter your details to start your session</p>
           </div>
 
+          <div className="mt-4 rounded-lg border border-blue-500/20 bg-blue-500/10 p-3">
+  <p className="text-xs text-blue-200 leading-relaxed">
+    This is a frontend demo project for showcasing UI and state management.
+    Feel free to enter any sample credentials to explore the application.
+    Authentication is not connected to a real backend, and the information you
+    enter is not used for account creation or monitoring.
+  </p>
+</div>
+
           {/* Form */}
           <form onSubmit={handleLogin} className="space-y-6">
             <div className="space-y-2">
